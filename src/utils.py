@@ -52,8 +52,7 @@ def predict_and_save(
 
 def clean_text(text: str):
     text = text.replace("\n", "")
-    text = text.replace('"', "")
-    return text
+    return text.replace('"', "")
 
 
 def combine_preds_targets(
